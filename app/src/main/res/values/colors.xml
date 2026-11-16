@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_pink">#D81B60</color>
+    <color name="primary_variant_pink">#F06292</color>
+    <color name="background_light">#F8F1F1</color>
+    <color name="status_bar_pink">#FFF5F5</color>
+    <color name="text_primary">#4A4A4A</color>
+    <color name="text_secondary">#6E7A7A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="nav_item_color_selected">@color/primary_pink</color>
+    <color name="nav_item_color_unselected">@color/text_secondary</color>
+    <!-- Tambahkan warna yang hilang -->
+    <color name="colorPrimary">@color/primary_pink</color>
+    <color name="colorPrimaryDark">@color/primary_variant_pink</color>
+    <color name="colorAccent">@color/primary_pink</color>
+</resources>

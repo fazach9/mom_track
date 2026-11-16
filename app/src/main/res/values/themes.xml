@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MomTrack</string>
+    <string name="reminder_time_hint">Pilih Waktu</string>
+    <string name="reminder_desc_hint">Deskripsi Pengingat</string>
+    <string name="add_reminder">Tambah Pengingat</string>
+</resources>

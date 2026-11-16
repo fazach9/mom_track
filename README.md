@@ -1,27 +1,41 @@
-# MomTrack 🤰📱
+# 🤰 MomTrack — Aplikasi Pendamping & Edukasi Ibu Hamil (Android)
 
-**MomTrack** adalah aplikasi mobile berbasis Android (Kotlin) yang dirancang untuk membantu ibu hamil memantau kesehatan dan mengatur jadwal harian selama masa kehamilan. Aplikasi ini menggabungkan pusat informasi edukatif dengan sistem pengingat otomatis yang praktis.
+Repositori ini berisi kode program dan dokumentasi proyek pengembangan aplikasi mobile **MomTrack** berbasis Android yang dirancang untuk mendampingi masa kehamilan melalui layanan edukasi kesehatan dan sistem pengingat jadwal harian.
 
-## ✨ Fitur Utama
+Aplikasi ini menggabungkan pusat informasi kehamilan yang terstruktur dengan fitur manajemen pengingat otomatis (*reminder*) berbasis notifikasi perangkat.
 
-* **Pusat Edukasi Kehamilan (Home):** Menyediakan daftar artikel informatif lengkap dengan ilustrasi visual mengenai nutrisi seimbang, manajemen berat badan, kualitas tidur, pencegahan stres, pentingnya vaksinasi, perawatan kulit, hingga persiapan persalinan.
-* **Halaman Detail Artikel:** Tampilan bacaan yang rapi dan mudah dipahami untuk setiap topik kesehatan ibu hamil.
-* **Pengingat Jadwal Otomatis (Reminder):** Pengguna dapat menambah, mengubah, dan menghapus jadwal pengingat (seperti jadwal minum vitamin atau kontrol dokter) yang terhubung dengan notifikasi perangkat.
-* **Profil & Manajemen Aktivitas (Profile):** Menampilkan ringkasan informasi pengguna beserta daftar pengingat yang sedang aktif.
+---
 
-## 🛠️ Teknologi & Komponen
+## 🎯 Fitur Utama
+
+* **Pusat Edukasi Kesehatan (Home):** Menyajikan artikel informatif beserta ilustrasi visual seputar nutrisi seimbang, manajemen berat badan, kualitas tidur, pencegahan stres, pentingnya vaksinasi, perawatan kulit, hingga persiapan persalinan.
+* **Halaman Detail Artikel:** Menampilkan konten bacaan kesehatan ibu hamil secara lengkap dan nyaman dibaca di layar perangkat mobile.
+* **Pengingat Jadwal Otomatis (Reminder):** Memungkinkan pengguna membuat, mengedit, dan menghapus jadwal pengingat (seperti konsumsi vitamin atau kontrol dokter) dengan pemicu notifikasi *real-time*.
+* **Profil & Manajemen Aktivitas (Profile):** Menampilkan ringkasan profil pengguna beserta daftar jadwal pengingat yang sedang aktif.
+
+---
+
+## 🛠️ Spesifikasi Teknologi (Tech Stack)
 
 * **Bahasa Pemrograman:** Kotlin
-* **Arsitektur & UI:** XML Layout, Fragment, Bottom Navigation, RecyclerView, CardView
-* **Sistem Latar Belakang:** `AlarmManager` & `BroadcastReceiver` untuk penjadwalan notifikasi
+* **Platform:** Android SDK
+* **Antarmuka Pengguna (UI):** XML Layout, Fragment, Bottom Navigation, RecyclerView, CardView
+* **Layanan Sistem:** `AlarmManager` & `BroadcastReceiver` untuk penjadwalan notifikasi latar belakang
 * **Build System:** Gradle (Kotlin DSL)
 
-## 🚀 Cara Menjalankan Proyek
+---
 
-1. **Clone repositori ini:**
-   ```bash
-   git clone https://github.com
-   ```
-2. **Buka di Android Studio:** Pilih **File > Open** dan arahkan ke folder hasil *clone* `MomTrack`.
-3. **Sinkronisasi Gradle:** Tunggu hingga Android Studio selesai mengunduh dependensi (`Gradle Sync`).
-4. **Jalankan Aplikasi:** Hubungkan perangkat Android atau jalankan Emulator, lalu klik tombol **Run** (`Shift + F10`).
+## ⚙️ Alur Kerja Sistem
+
+1. **Eksplorasi Informasi:** Pengguna membuka halaman utama (*Home*) untuk memilih dan membaca artikel edukasi kehamilan sesuai kebutuhan.
+2. **Penjadwalan Pengingat:** Pengguna menambahkan jadwal aktivitas atau pengingat melalui fitur *Reminder* dan menentukan waktu notifikasi.
+3. **Background Trigger:** Sistem menjadwalkan waktu pengingat menggunakan `AlarmManager` yang berjalan di latar belakang.
+4. **Push Notification:** Saat waktu yang ditentukan tiba, `BroadcastReceiver` memicu munculnya notifikasi pengingat pada perangkat Android pengguna.
+
+---
+
+## 👨‍💻 Pengembang
+
+**Faza Chansa Maulana, S.Kom**  
+Lulusan S1 Teknik Informatika — Universitas Muria Kudus  
+📧 Email: [fazachansa123@gmail.com](mailto:fazachansa123@gmail.com)
